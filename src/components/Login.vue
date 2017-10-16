@@ -4,11 +4,11 @@
     <div class="form">
 
       <ul class="tab-group">
-        <li class="tab">
-          <a :class="{ 'activeClass' : !loginIsActive }" @click="loginIsActive = false">Sign Up</a>
+        <li :class="{ 'active' : !loginIsActive }" class="tab">
+          <a @click="loginIsActive = false">Sign Up</a>
         </li>
-        <li class="tab">
-          <a :class="{ 'activeClass' : loginIsActive }" @click="loginIsActive = true">Log In</a>
+        <li :class="{ 'active' : loginIsActive }" class="tab">
+          <a @click="loginIsActive = true">Log In</a>
         </li>
       </ul>
 
@@ -185,11 +185,6 @@ a:hover {
 .tab-group .active a {
   background: #1ab188;
   color: #ffffff;
-}
-
-.activeClass {
-  background: #1ab188 !important;
-  color: #ffffff !important;
 }
 
 h1 {
