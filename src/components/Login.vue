@@ -21,36 +21,36 @@
 
             <div class="top-row">
               <div class="field-wrap">
-                <label>
+                <!-- <label>
                   First Name
                   <span class="req">*</span>
-                </label>
-                <input type="text" required autocomplete="off" />
+                </label> -->
+                <input type="text" required autocomplete="off" placeholder="First Name" />
               </div>
 
               <div class="field-wrap">
-                <label>
+                <!-- <label>
                   Last Name
                   <span class="req">*</span>
-                </label>
-                <input type="text" required autocomplete="off" />
+                </label> -->
+                <input type="text" required autocomplete="off" placeholder="Last Name" />
               </div>
             </div>
 
             <div class="field-wrap">
-              <label>
+              <!-- <label>
                 Email Address
                 <span class="req">*</span>
-              </label>
-              <input type="email" required autocomplete="off" />
+              </label> -->
+              <input type="email" required autocomplete="off" placeholder="Email Address" />
             </div>
 
             <div class="field-wrap">
-              <label>
+              <!-- <label>
                 Set A Password
                 <span class="req">*</span>
-              </label>
-              <input type="password" required autocomplete="off" />
+              </label> -->
+              <input type="password" required autocomplete="off" placeholder="Set A Password" />
             </div>
 
             <button type="submit" class="button button-block">Get Started</button>
@@ -65,26 +65,26 @@
           <form>
 
             <div class="field-wrap">
-              <label>
+              <!-- <label>
                 Email Address
                 <span class="req">*</span>
-              </label>
-              <input type="email" required autocomplete="off" />
+              </label> -->
+              <input type="email" required autocomplete="off" placeholder="Email Address" />
             </div>
 
             <div class="field-wrap">
-              <label>
+              <!-- <label>
                 Password
                 <span class="req">*</span>
-              </label>
-              <input type="password" required autocomplete="off" />
+              </label> -->
+              <input type="password" required autocomplete="off" placeholder="Passwprd" />
             </div>
 
             <p class="forgot">
               <a href="#">Forgot Password?</a>
             </p>
 
-            <button class="button button-block">Log In</button>
+            <button class="button button-block" @click="redirectToHome">Log In</button>
 
           </form>
 
@@ -108,6 +108,17 @@ export default {
   data() {
     return {
       loginIsActive: false,
+    }
+  },
+
+  methods: {
+    redirectToHome(){
+      this.$router.push({ name: 'Home', params: {
+        name: 'Mannu'
+        } 
+      });
+      // this.$router.push('/home');
+      // console.log(this.$router);
     }
   }
 
