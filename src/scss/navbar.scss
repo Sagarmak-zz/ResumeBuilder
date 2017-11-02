@@ -1,0 +1,119 @@
+.navbar {
+  background: $primary;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  min-height: $navbar-height;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+
+  .navbar-button {
+    float: right;
+    margin: ($sidebar-padding/2) + 2;
+    margin-left: 0;
+    color: $grey;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    &:hover {
+      color: $grey-dark;
+    }
+
+    .button-icon {
+      display: inline-block;
+    }
+
+    .button-text {
+      display: none;
+    }
+  }
+
+  .logo {
+    display: none;
+    padding: $sidebar-padding;
+
+    img {
+      width: 20px;
+      vertical-align: middle;
+    }
+  }
+
+  .account-tab {
+    float: left;
+    padding-top: 9px;
+    color: $white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 18px;
+    cursor: pointer;
+    position: relative;
+
+    .icon {
+      font-size: 0.8em;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+
+    .account-name {
+      display: none;
+    }
+
+    .account-dropdown {
+      position: absolute;
+      top: 100%;
+      left: 10%;
+      margin-top: 1px;
+      background: $white;
+      border-radius: 0 0 $radius $radius;
+      min-width: 200px;
+      z-index: 12;
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15), -1px 0 4px rgba(0, 0, 0, 0.15);
+
+      a,
+      span {
+        font-size: 0.9em;
+        display: block;
+        padding: 10px 20px;
+        border-bottom: solid 1px $grey-lighter;
+        color: $primary;
+      }
+
+      span {
+        cursor: default;
+        color: $grey-light;
+      }
+    }
+  }
+}
+@media only screen and (min-device-width : 700px) {
+  .navbar {
+    .account-tab {
+      .account-name {
+        display: inline;
+      }
+    }
+
+    .logo {
+      display: inline-block;
+    }
+
+    .navbar-button {
+      .button-text {
+        display: block;
+      }
+
+      .button-icon {
+        display: none;
+      }
+    }
+  }
+}
