@@ -5,10 +5,7 @@
 
 <script>
 export default {
-    name: 'home-page',
-    created(){
-      console.log(this.$route);
-    }
+    
 }
 </script>
 

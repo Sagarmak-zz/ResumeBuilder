@@ -21,35 +21,19 @@
 
             <div class="top-row">
               <div class="field-wrap">
-                <!-- <label>
-                  First Name
-                  <span class="req">*</span>
-                </label> -->
                 <input type="text" required autocomplete="off" placeholder="First Name" />
               </div>
 
               <div class="field-wrap">
-                <!-- <label>
-                  Last Name
-                  <span class="req">*</span>
-                </label> -->
                 <input type="text" required autocomplete="off" placeholder="Last Name" />
               </div>
             </div>
 
             <div class="field-wrap">
-              <!-- <label>
-                Email Address
-                <span class="req">*</span>
-              </label> -->
               <input type="email" required autocomplete="off" placeholder="Email Address" />
             </div>
 
             <div class="field-wrap">
-              <!-- <label>
-                Set A Password
-                <span class="req">*</span>
-              </label> -->
               <input type="password" required autocomplete="off" placeholder="Set A Password" />
             </div>
 
@@ -65,18 +49,10 @@
           <form>
 
             <div class="field-wrap">
-              <!-- <label>
-                Email Address
-                <span class="req">*</span>
-              </label> -->
               <input type="email" required autocomplete="off" placeholder="Email Address" />
             </div>
 
             <div class="field-wrap">
-              <!-- <label>
-                Password
-                <span class="req">*</span>
-              </label> -->
               <input type="password" required autocomplete="off" placeholder="Passwprd" />
             </div>
 
@@ -91,10 +67,8 @@
         </div>
 
       </div>
-      <!-- tab-content -->
 
     </div>
-    <!-- /form -->
 
   </div>
 </template>
@@ -117,8 +91,7 @@ export default {
         name: 'Mannu'
         } 
       });
-      // this.$router.push('/home');
-      // console.log(this.$router);
+ 
     }
   }
 
