@@ -8,7 +8,7 @@
                     </td>
 
                     <td class="intro w-80">
-                        <h1>resume.info.name</h1>
+                        <h1>{{ name }}</h1>
                         <p>
                             <b>Dhirubhai Ambani Institute of Information and Communication Technology</b>
                         </p>
@@ -207,6 +207,15 @@
     </div>
 </template>
 
+<script>
+export default {
+  name: 'resume-template',
+
+  props: ['name']
+}
+</script>
+
+
 <style lang="scss">
-    @import "../scss/resume-template";
+     @import "../scss/resume-template";
 </style>
