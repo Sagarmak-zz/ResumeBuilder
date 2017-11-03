@@ -207,4 +207,6 @@
     </div>
 </template>
 
-<style lang="scss">@import "../scss/resume-template";</style>
+<style lang="scss">
+    @import "../scss/resume-template";
+</style>

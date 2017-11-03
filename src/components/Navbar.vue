@@ -3,8 +3,7 @@
   </div>
 </template>
 
-<style>
-.navbar {
-    background-color: lightblue;
-}
+<style lang="sass">
+  @import "../scss/navbar";
 </style>
+

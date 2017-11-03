@@ -1,11 +1,6 @@
 <template>
-<div class="sidebar">
-  <div class="columns">
-    <div class="master column is-4">
-
-    </div>
-    <div></div>
-  </div>
+<div class="sidebar master">
+  
 </div>
 </template>
 
@@ -17,9 +12,7 @@ export default {
 </script>
 
 
-<style>
-.master {
-    background-color: lightcyan;
-    height: 100vh;
-}
+<style lang="sass">
+  @import "../scss/sidebar";
 </style>
+
