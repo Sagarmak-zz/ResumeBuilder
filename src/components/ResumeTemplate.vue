@@ -204,7 +204,6 @@
                     </td>
                 </tr>
             </table>
-        
         </div>
     </div>
 </template>
@@ -228,6 +227,7 @@ export default {
   bottom: 0;
   overflow-y: scroll;
   display: inline;
+
 
   * {
     font-size: 14px;

@@ -11,14 +11,19 @@
         </v-card>
       </v-flex>
 
-      <v-flex xs8>
+      <!-- <v-flex xs8>
         <v-card>
           <resume-template :resume="resume"></resume-template>
         </v-card>
+      </v-flex>  -->
+
+      <v-flex xs8>
+        <v-card>
+          <resume-template2 :resume="resume"></resume-template2>
+        </v-card>
       </v-flex>
-      
-    
-    </v-layout>    
+
+    </v-layout>
   </v-container>
 </div>
 </template>
@@ -28,91 +33,98 @@
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import ResumeTemplate from './components/ResumeTemplate'
+import ResumeTemplate2 from './components/ResumeTemplate2.vue'
 
 export default {
-  data(){
-      return{
+  data() {
+      return {
         resume: {
 
           info: {
-            name: 'Dummy',
-            email: 'Dummy@gmail.com',
-            dob: '01/01/1995',
+            name: 'Local Dummy',
+            email: 'dummy@email.com',
+            dob: '1/1/1995',
             address: '123/1, Gandhinagar'
           },
 
           degree: [
             {
-              name: '',
-              institute: '',
-              year: '',
-              score: ''
+              name: 'MSc IT',
+              institute: 'DAIICT',
+              year: '2018',
+              score: '8.0'
             }
           ],
 
-          skill: [
-            {
-              expertise: '',
-              programming_languages: '',
-              tools: '',
-              technical_electives: ''
-            }
-          ],
+          skill: {
+              expertise: 'Web Developement',
+              programming_languages: 'Javascript',
+              tools: 'Postman',
+              technical_electives: 'Cloud'
+          },
 
           internship: [
             {
-              name: '',
-              description: '',
-              start: '',
-              end: '',
-              team_size: '',
-              guide: ''
+              name: 'Road Inspector',
+              description: 'Cross platform application',
+              start: '1/7/2017',
+              end: '1/9/2017',
+              team_size: '5',
+              guide: 'Lavguru'
             }
           ],
 
           project: [
             {
-              name: '',
-              description: '',
-              start: '',
-              end: '',
-              team_size: '',
-              guide: ''
+              name: 'Road Inspector',
+              description: 'Cross platform application',
+              start: '1/7/2017',
+              end: '1/9/2017',
+              team_size: '5',
+              guide: 'Lavguru'
             }
           ],
 
           position: [
             {
-              name: ''
+              name: 'Proect Leader'
             }
           ],
 
           award: [
             {
-              name: ''
+              name: 'Nope'
             }
           ],
 
           hobby: [
             {
-              name: ''
+              name: 'TV Series'
             }
           ]
-
         },
-      }
+
+        //resume: {}
+      };
   },
 
-  created() {
-    
-  },
+  // created() {
+  //   axios.get('http://localhost:3000/db')
+  //   .then( (response) => {
+  //     this.resume = response.data.resume;
+  //   })
+  //   .catch((error) => {
+  //     console.log(error);
+  //   })
+  // },
 
   components: {
     Navbar,
     Sidebar,
-    ResumeTemplate
+    ResumeTemplate,
+    ResumeTemplate2
   },
-  
+
 }
 
 </script>
