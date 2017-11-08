@@ -11,15 +11,9 @@
         </v-card>
       </v-flex>
 
-      <!-- <v-flex xs8>
-        <v-card>
-          <resume-template :resume="resume"></resume-template>
-        </v-card>
-      </v-flex>  -->
-
       <v-flex xs8>
         <v-card>
-          <resume-template2 :resume="resume"></resume-template2>
+          <resume-template1 :resume="resume"></resume-template1>
         </v-card>
       </v-flex>
 
@@ -33,7 +27,6 @@
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import ResumeTemplate from './components/ResumeTemplate'
-import ResumeTemplate2 from './components/ResumeTemplate2.vue'
 
 export default {
   data() {
@@ -122,7 +115,6 @@ export default {
     Navbar,
     Sidebar,
     ResumeTemplate,
-    ResumeTemplate2
   },
 
 }
